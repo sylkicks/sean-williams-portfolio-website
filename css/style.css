@@ -8,7 +8,15 @@ Background Color (Dark Purple): #160a47;
 Font Color (Off White): #f5f5f5;
 */
 
-/* Body and Fonts */
+
+/* Universal Box Sizing/Border Box */
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Body */
 
 body {
   background-color: #160a47;
@@ -18,32 +26,75 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #f5f5f5;
 }
+
+
+/* Fonts */
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.75em;
-  font-weight: 700;
+  font-size: 2.5em;
+  font-weight: 600;
   width: 100%;
+  text-align: center;
 }
 h2 {
   font-size: 2.25em;
-  font-weight: 700;
+  font-weight: 600;
   width: 100%;
+  text-align: center;
 }
 h3 {
   font-size: 1.75em;
-  font-weight: 400;
+  font-weight: 300;
   width: 100%;
 }
 h4 {
   font-size: 1.35em;
-  font-weight: 400;
+  font-weight: 300;
   width: 100%;
 }
+
+
+/* Header */
+
+header {
+  background-color: #60047a;
+  padding: 10px 0;
+  border-bottom: 3px solid #60047a;
+  text-align: center;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow:    0px 2px 8px 0px rgba(0, 0, 0, 0.75);
+  box-shadow:         0px 2px 8px 0px rgba(0, 0, 0, 0.75);
+  position: fixed;
+  width: 100%;
+}
+
+
+/* Hero */
+
+#hero {
+  background-color: #60047a;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+
+/* Main */
+
+main {
+  padding-top: 170.33px;
+}
+
+
+/* Images */
+
 img {
   width: 100%;
 }
+
 
 /* Hyperlinks */
 
@@ -60,10 +111,11 @@ a:active { /* selected link */
   color: #9c0f5f;
 }
 
+
 /* Buttons */
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block; /* this is to change display:inline default */
   background-color: #f2671f;
   color: #f5f5f5; /* needed to override the default link color */
   font-weight: 400;
@@ -85,8 +137,72 @@ a:active { /* selected link */
   color: #f2671f;
   text-transform: uppercase;
   border: 2px solid #f2671f;
+  text-align: center;
 }
 .button.contact:hover {
   background-color: #f2671f;
   color: #f5f5f5;
+}
+
+
+/* Layout Styling */
+
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a
+}
+#hero h1 {
+  text-align: center;
+}
+#work h2 {
+  text-align: center;
+}
+#contact h2 {
+  text-align: center;
+}
+.logo {
+  max-width: 250px;
+}
+nav {
+  display: inline-block;
+  width: 100%
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #f2671f;
+}
+.socialmedia {
+  display: inline-block;
+  width: 30%
+}
+.socialmedia > ul {
+  list-style-type: none;
+  padding: 0;
+}
+.socialmedia > ul > li {
+  padding: 0 10px
+  text-align: center;
+}
+.copyright p {
+  text-align: center;
+}
+.email {
+  text-align: center;
+}
+.resume {
+  text-align: center;
 }
