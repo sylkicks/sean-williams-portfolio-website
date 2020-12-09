@@ -94,6 +94,16 @@ main {
 img {
   width: 100%;
 }
+.profile-img {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mountains-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 
 
 /* Hyperlinks */
@@ -154,7 +164,7 @@ a:active { /* selected link */
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 #work .row {
-  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
 }
 #hero h1 {
   text-align: center;
@@ -167,6 +177,9 @@ a:active { /* selected link */
 }
 #work h2 {
   text-align: center;
+}
+#contact {
+  padding-top: 25px; border-top: 1px solid #4a4a4a;
 }
 #contact h2 {
   text-align: center;
@@ -282,6 +295,16 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
+  .profile-img {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .project-img {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
@@ -301,6 +324,11 @@ Large devices (1024px or larger)
   }
   .container {
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .project-img {
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
   }
