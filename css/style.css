@@ -61,9 +61,8 @@ h4 {
 
 header {
   background-color: #60047a;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   border-bottom: 3px solid #60047a;
-  text-align: center;
   -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow:    0px 2px 8px 0px rgba(0, 0, 0, 0.75);
   box-shadow:         0px 2px 8px 0px rgba(0, 0, 0, 0.75);
@@ -85,7 +84,7 @@ header {
 /* Main */
 
 main {
-  padding-top: 170.33px;
+  padding-top: 74px;
 }
 
 
@@ -182,18 +181,12 @@ a:active { /* selected link */
   text-align: center;
 }
 .logo {
-  max-width: 250px;
-}
-nav {
-  display: inline-block;
-  width: 100%
+  max-width: 150px;
 }
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 nav > ul > li > a:visited {
   text-decoration: none;
@@ -233,6 +226,33 @@ nav > ul > li > a:hover, a:focus {
 }
 .text-center {
   text-align: center;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 
@@ -301,6 +321,21 @@ Medium devices (640px and larger)
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
+  nav > ul {
+    margin: 1em 0;
+  }
+  .logo {
+    max-width: 250px;
   }
 }
 
