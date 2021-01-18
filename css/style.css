@@ -1,9 +1,9 @@
 /*
 Colors used:
 Primary Color (Purple): #60047a;
-Secondary Color (Maroon): #9c0f5f;
+Secondary Color (Maroon): #f276Bc;
 Accent Color (Red): #c91b26;
-Accent Color (Orange): #f2671f;
+Accent Color (Orange): #f48246;
 Background Color (Dark Purple): #160a47;
 Font Color (Off White): #f5f5f5;
 */
@@ -108,7 +108,7 @@ img {
 /* Hyperlinks */
 
 a {
-  color: #f2671f;
+  color: #f48246;
   text-decoration: none; /* No underlining */
 }
 a:hover,
@@ -117,7 +117,7 @@ a:focus {
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
-  color: #9c0f5f;
+  color: #f276Bc;
 }
 
 
@@ -125,8 +125,8 @@ a:active { /* selected link */
 
 .button {
   display: inline-block; /* this is to change display:inline default */
-  background-color: #f2671f;
-  color: #f5f5f5; /* needed to override the default link color */
+  background-color: #f48246;
+  color: #383838; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -143,13 +143,13 @@ a:active { /* selected link */
 }
 .button.contact {
   background-color: transparent;
-  color: #f2671f;
+  color: #f48246;
   text-transform: uppercase;
-  border: 2px solid #f2671f;
+  border: 2px solid #f48246;
   text-align: center;
 }
 .button.contact:hover {
-  background-color: #f2671f;
+  background-color: #f48246;
   color: #f5f5f5;
 }
 
@@ -190,7 +190,7 @@ nav > ul {
 }
 nav > ul > li > a:visited {
   text-decoration: none;
-  color: #f2671f;
+  color: #f48246;
 }
 nav > ul > li > a {
   color: #c91b26;
